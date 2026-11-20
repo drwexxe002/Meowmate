@@ -1,0 +1,158 @@
+/* ===== MeowMate - styling tambahan di atas Bootstrap ===== */
+:root{
+    --cream:#fff8f0;
+    --pink:#e8b4b8;
+    --orange:#f4a261;
+    --orange-dark:#d9803a;
+    --brown:#4a2f27;
+}
+html{
+    scroll-behavior:smooth
+}
+
+body{
+    background:var(--cream);
+    color:var(--brown);
+    font-family:'DM Sans',sans-serif;
+    line-height:1.65
+}
+
+h1,h2,h3,h4,h5{
+    font-family:'Fraunces',serif;
+    font-weight:600
+}
+section{
+    padding:72px 0;
+    scroll-margin-top:64px
+}
+
+.navbar{
+    background:#fff;
+    box-shadow:0 2px 12px rgba(74,47,39,.08)
+}
+
+.navbar-brand{
+    color:var(--orange-dark)!important;
+    font-family:'Fraunces',serif;
+    font-weight:700
+}
+.nav-link{
+    color:var(--brown)!important}.nav-link:hover{color:var(--orange-dark)!important}
+.btn-meow{
+    background:var(--orange);
+    border:none;
+    color:#fff;
+    border-radius:50px;
+    padding:10px 26px;
+    font-weight:500
+}
+
+.btn-meow:hover{
+    background:var(--orange-dark);
+    color:#fff
+}
+
+.btn-outline-meow{
+    border:2px solid var(--orange);
+    color:var(--orange-dark);
+    border-radius:50px
+}
+.btn-outline-meow:hover{
+    background:var(--orange);
+    color:#fff
+}
+
+.hero{
+    background:linear-gradient(135deg,#fff8f0 55%,#f8dfe0);
+    padding-top:120px
+}
+
+.hero-img{
+    border-radius:28px;
+    width:100%;
+    max-height:400px;
+    object-fit:cover;
+    box-shadow:0 10px 28px rgba(74,47,39,.16)
+}
+.section-alt{
+    background:#fdeee9
+}
+.card{
+    border:none;
+    border-radius:18px;
+    box-shadow:0 4px 16px rgba(74,47,39,.08);
+    overflow:hidden
+}
+.card-img-top{
+    height:210px;
+    object-fit:cover;
+    background:var(--pink)
+}
+.badge-pink{
+    background:var(--pink);
+    color:var(--brown)
+}
+.btn-like{
+    border:none;
+    background:none;
+    color:#c2185b;
+    padding:0
+}
+.alert-meow{
+    background:#fff3e0;
+    border-left:5px solid var(--orange);
+    border-radius:12px
+}
+.form-control,.form-select,.modal-content{
+    border-radius:12px
+}
+.ikon-besar{
+    font-size:2.4rem;
+    color:var(--orange-dark)
+}
+footer{
+    background:var(--brown);
+    color:#f5e6dc;
+    padding:40px 0 20px
+}
+footer a{
+    color:var(--pink);
+    text-decoration:none
+}
+/* Ikon timbul saat di-scroll: kelas ini hanya ditambahkan oleh JavaScript */
+html { scroll-behavior: smooth; }
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity .7s ease, transform .7s ease;
+}
+.reveal.tampil {
+  opacity: 1;
+  transform: none;
+}
+
+/* hormati pengguna yang mematikan animasi di perangkatnya */
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+}
+@media (max-width: 768px) {
+  html { font-size: 15px; }
+  h1, .display-5 { font-size: 1.8rem; line-height: 1.25; }
+  h2 { font-size: 1.4rem; }
+  h5 { font-size: 1.1rem; }
+  .lead { font-size: 1rem; }
+  .btn-lg { font-size: 1rem; padding: .6rem 1.2rem; }
+  section { padding-top: 2.5rem; padding-bottom: 2.5rem; }
+}
+/* Panel admin: hanya satu yang tampil */
+.panel-admin { display: none; }
+.panel-admin.aktif { display: block; }
+
+/* Kartu statistik dashboard */
+.stat-card { padding: 1rem; text-align: center; }
+.stat-card .angka { font-size: 1.8rem; font-weight: 700; line-height: 1.2; }
+
+.admin-sidebar .nav-link { color: #5a3a2a; }
+.admin-sidebar .nav-link.active { background-color: #f4a261; color: #fff; }
+.admin-sidebar .nav-link:hover:not(.active) { background-color: #fde8dc; }
